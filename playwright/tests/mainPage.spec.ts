@@ -73,7 +73,7 @@ test('Проверка заголовка страницы', async ({ page }) =>
 test('Проверка переход Get started', async ({ page }) => {
   await page.goto('https://playwright.dev/');
   await expect.soft(page.getByRole('link', { name: 'Get started' })).toBeVisible();
-  await expect.soft(page.getByRole('link', { name: 'Get started' })).toContainText('Get started');
+  await expect.soft(page.getByRole('link', { name: 'Get started1' })).toContainText('Get started');
   await expect
     .soft(page.getByRole('link', { name: 'Get started' }))
     .toHaveAttribute('href', '/docs/intro');
